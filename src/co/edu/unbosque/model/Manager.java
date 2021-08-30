@@ -22,7 +22,7 @@ public class Manager {
 
 	public Manager() throws FileNotFoundException {
 
-//		archCSV = new FileReader("data/pets-citizens.csv");
+		archCSV = new FileReader("data/pets-citizens.csv");
 //		archCSV = new FileReader("data/bdp.csv"); //BASE PEQUEÑA
 		CSVParser separator = new CSVParserBuilder().withSeparator(';').build();
 		csvReader = new CSVReaderBuilder(archCSV).withCSVParser(separator).build();
