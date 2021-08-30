@@ -147,7 +147,7 @@ public class Manager {
 	public Pet findByMicrochip(Long microchip) {
 		for(int i=0; i<pets.size();i++) {
 			if(pets.get(i).getMicrochip() == microchip) {
-				System.out.println("Pet fund!");
+				System.out.println("Pet found!");
 				return pets.get(i);
 			}
 		}
